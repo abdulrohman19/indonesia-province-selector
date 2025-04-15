@@ -24,8 +24,11 @@ Aplikasi ini dibuat menggunakan ReactJS + TypeScript + Vite sebagai solusi untuk
 
 ```bash
 git clone https://github.com/abdulrohman19/indonesia-province-selector.git
-Install dependencies:
 
+move folder:
+cd indonesia-province-selector
+
+Install dependencies:
 npm install
 
 Jalankan aplikasi:
