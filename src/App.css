@@ -1,0 +1,54 @@
+.app {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.input-form {
+  max-width: 400px;
+  margin: auto;
+}
+.input-form input {
+  margin: 10px;
+  padding: 5px;
+}
+.burger-app {
+  display: flex;
+}
+.burger-menu {
+  position: relative;
+}
+.burger-button {
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #f0f0f0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 200px;
+  border: 1px solid #ccc;
+  animation: slideIn 0.3s ease;
+}
+.menu-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+.menu-list li:hover {
+  background: #ddd;
+}
+.content {
+  margin-left: 220px;
+  padding: 20px;
+}
+.error {
+  color: red;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
