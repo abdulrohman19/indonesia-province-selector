@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# Provinsi dan Kota App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi ini dibuat menggunakan ReactJS + TypeScript + Vite sebagai solusi untuk **Soal Test Frontend Developer**. Aplikasi ini menampilkan daftar **provinsi** dalam bentuk **burger menu** sesuai jumlah yang dimasukkan pengguna, dan menampilkan semua **kabupaten/kota** dari provinsi yang dipilih.
 
-Currently, two official plugins are available:
+## ✨ Fitur Utama
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Input jumlah provinsi yang ingin ditampilkan (maksimal 32)
+- Burger menu interaktif dan responsif
+- Menampilkan daftar kabupaten/kota tanpa batasan jumlah
+- Validasi input dan pesan error jika input tidak valid
+- Efek animasi untuk burger menu saat terbuka/tutup (jika sudah diterapkan)
+- Responsif dan dapat digunakan di perangkat mobile
 
-## Expanding the ESLint configuration
+## 🔧 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- ReactJS
+- TypeScript
+- Vite
+- CSS
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Cara Menjalankan
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Clone repo ini:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+```bash
+git clone [https://github.com/username/nama-repo.git](https://github.com/abdulrohman19/indonesia-province-selector.git)
+Install dependencies:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+npm install
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Jalankan aplikasi:
+npm run dev
+
+🗺️ Sumber Data Wilayah
+Data provinsi dan kabupaten/kota diambil dari API publik:
+
+emsifa.com API Wilayah Indonesia
+
+📝 Catatan
+Maksimal jumlah provinsi yang dapat dimasukkan: 32
+
+Jika jumlah di luar batas tersebut, aplikasi akan menampilkan pesan error
