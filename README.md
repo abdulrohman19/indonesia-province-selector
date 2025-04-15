@@ -2,6 +2,10 @@
 
 Aplikasi ini dibuat menggunakan ReactJS + TypeScript + Vite. Aplikasi ini menampilkan daftar **provinsi** dalam bentuk **burger menu** sesuai jumlah yang dimasukkan pengguna, dan menampilkan semua **kabupaten/kota** dari provinsi yang dipilih.
 
+## 📸 Preview
+<img width="1034" alt="image" src="https://github.com/user-attachments/assets/71223c80-ed53-40b9-9a7c-c8e79de66a5d" />
+
+
 ## ✨ Fitur Utama
 
 - Input jumlah provinsi yang ingin ditampilkan (maksimal 32)
