@@ -8,7 +8,7 @@
 
 body {
   background-color: #f7f7f7;
-  color: #333;
+  color: #0e81d9;
   padding: 20px;
 }
 
@@ -68,10 +68,11 @@ body {
 
 .burger-button {
   font-size: 2rem;
-  background: none;
+  background: rgb(15, 189, 228);
   border: none;
   cursor: pointer;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .menu-list {
