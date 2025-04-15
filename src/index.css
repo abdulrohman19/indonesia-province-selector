@@ -1,31 +1,144 @@
-.app {
-  font-family: sans-serif;
+/* Global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #333;
   padding: 20px;
-  text-align: center;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .input-form {
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-form label {
+  font-size: 1rem;
+}
+
+.input-form input {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.input-form button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-form button:hover {
+  background-color: #005fa3;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.burger-app {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Burger menu styles */
+.burger-menu {
+  position: relative;
+}
+
+.burger-button {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
 }
 
 .menu-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: #eee;
-  position: fixed;
-  top: 60px;
-  left: 16px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
   padding: 10px;
-  border-radius: 8px;
-  z-index: 999;
+  width: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 
 .menu-list li {
+  list-style: none;
+  padding: 10px;
   cursor: pointer;
-  margin: 8px 0;
 }
 
+.menu-list li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Content area */
 .content {
-  margin-top: 80px;
+  flex: 1;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.content h2 {
+  margin-bottom: 10px;
+}
+
+.content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.content li {
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .burger-app {
+    flex-direction: column;
+  }
+
+  .menu-list {
+    position: static;
+    width: 100%;
+    max-height: 200px;
+  }
+
+  .burger-button {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+  .content {
+    margin-top: 10px;
+  }
 }
