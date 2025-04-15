@@ -1,6 +1,6 @@
 # Provinsi dan Kota App
 
-Aplikasi ini dibuat menggunakan ReactJS + TypeScript + Vite sebagai solusi untuk **Soal Test Frontend Developer**. Aplikasi ini menampilkan daftar **provinsi** dalam bentuk **burger menu** sesuai jumlah yang dimasukkan pengguna, dan menampilkan semua **kabupaten/kota** dari provinsi yang dipilih.
+Aplikasi ini dibuat menggunakan ReactJS + TypeScript + Vite. Aplikasi ini menampilkan daftar **provinsi** dalam bentuk **burger menu** sesuai jumlah yang dimasukkan pengguna, dan menampilkan semua **kabupaten/kota** dari provinsi yang dipilih.
 
 ## ✨ Fitur Utama
 
