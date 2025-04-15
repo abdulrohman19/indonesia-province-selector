@@ -36,10 +36,8 @@ npm run dev
 
 🗺️ Sumber Data Wilayah
 Data provinsi dan kabupaten/kota diambil dari API publik:
-
-emsifa.com API Wilayah Indonesia
+API Wilayah Indonesia - emsifa.com 
 
 📝 Catatan
 Maksimal jumlah provinsi yang dapat dimasukkan: 32
-
 Jika jumlah di luar batas tersebut, aplikasi akan menampilkan pesan error
